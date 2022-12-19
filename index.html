@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="assets/img/header__logo.png" alt="SKhynix 로고">
+            </a>
+            <ul class="header__menu">
+                <li><a href="#">기술</a></li>
+                <li><a href="#">사람&문화</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">프레스센터</a></li>
+                <li><a href="#">회사소개</a></li>
+            </ul>
+            <ul class="header__menu__sub">
+                <ul>
+                    <li><a href="#">기술</a></li>
+                    <li><a href="#">반도체</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">트렌드</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">사람&문화</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">지속가능경영</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">프레스센터</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">미디어라이브러리</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">경영실적</a></li>
+                    <li><a href="#">지속가능경영보고서</a></li>
+                    <li><a href="#">채용정보</a></li>
+                </ul>
+            </ul>
+            <div class="header__search">
+                <input type="text" placeholder="'반도체'를 검색해 보세요">
+                <span class="search-btn"></span>
+                <span class="language-btn"></span>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider__img">
+                        <img src="assets/img/slider01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__img">
+                        <img src="assets/img/slider02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__img">
+                        <img src="assets/img/slider03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <section></section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+</body>
+</html> 
